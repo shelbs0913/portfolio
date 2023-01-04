@@ -1,0 +1,86 @@
+/* #512d38 - Old Mauve
+   #b27092 - Pearly Purple
+   #ffd447 - Mustard
+   #ffe9f3 - Lavender Blush
+   #87baab - Green Sheen
+   #c9c9c9 - Silver
+*/
+
+/* Global Styles
+-----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@400;600&display=swap');
+
+body {
+    color: darkslategray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: #ffd447;
+}
+a:hover {
+    text-decoration: none;
+}
+h2 {
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+}
+/* Profile
+-----------------------------------*/
+header {
+    background-color: #b27092;
+}
+
+/* Projects
+-----------------------------------*/
+.projects {
+    background-color: #ffe9f3;
+}
+.projects a {
+    color: #ffd447;
+    background: #512d38;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects a:hover {
+    background: rgba(81, 45, 56, 80%);
+}
+
+
+/* Work Experience
+-----------------------------------*/
+.work-experience {
+    background-color: #703d57;
+    color:  #87baab
+}
+
+
+/* Education
+-----------------------------------*/
+.education {
+    background-color: #ffe9f3;
+}
+
+/* Contact Info
+-----------------------------------*/
+footer {
+    background-color: #b27092;
+}
