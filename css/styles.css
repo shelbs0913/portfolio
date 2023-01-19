@@ -10,12 +10,31 @@
 -----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     color: darkslategray;
-    margin: 0;
-    padding: 0;
     font-family: 'Montserrat', sans-serif;
-    ;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 990px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    body{
+        grid-template-columns: 1fr;
+        padding: 2rem 50px;
+        font-size: 30px;
+    }
 }
 
 img {
@@ -46,6 +65,129 @@ h1, h2 {
 header {
     background-color: #b27092;
 }
+
+/* Skills
+---------------------------------- */
+.inner{
+    padding-top: 20px;
+}
+
+.skills {
+    background-color: #703d57;
+    color:  #87baab
+}
+
+.header{
+    text-align: center;
+    color: #87baab;
+    padding: 1rem;
+    position: relative;
+}
+
+.header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #ffd447;
+    border-radius: 2px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #87baab;
+    cursor: pointer;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width: 35px;
+}
+
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #ffd447;
+    transition: .5s;
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #ffd447;
+    transition: .5s;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 90px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3{
+    color: #87baab;;
+    margin-top: 0.5rem;
+}
+
+
+
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
+
 
 /* Projects
 -----------------------------------*/
