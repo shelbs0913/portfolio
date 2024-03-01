@@ -6,6 +6,13 @@
    #c9c9c9 - Silver
 */
 
+/* #947e94 
+   #412728
+   #DABFBF
+   #67716A
+   #B5755E
+*/
+
 /* Global Styles
 -----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@400;600&display=swap');
@@ -16,9 +23,9 @@
     box-sizing: border-box;
 }
 body {
-    color: darkslategrey;
+    color: #c9c9c9;
     font-family: 'Montserrat', sans-serif;
-}
+    background-image: linear-gradient(to right top, #947e94, #807e96, #6e7e90, #657c85, #637878, #637971, #6a7868, #747660, #88765b, #9e7260, #af6f73, #b27092);}
 
 img {
     width: 300px;
@@ -53,8 +60,9 @@ h1, h2 {
 /* Profile
 -----------------------------------*/
 header {
-    background-color: #b27092;
+    /* background-color: #947e94; */
     font-size: 20px;
+    border-bottom: dotted;
 }
 
 /* Skills
@@ -64,13 +72,14 @@ header {
 }
 
 .skills {
-    background-color: #703d57;
-    color:  #87baab
+    /* background-color: #412728; */
+    /* color:  #87baab */
+    border-bottom: dotted;
 }
 
 .header{
     text-align: center;
-    color: #87baab;
+    /* color: #87baab; */
     padding: 1rem;
     position: relative;
 }
@@ -99,7 +108,7 @@ header {
 
 .skill-box{
     padding: 1rem;
-    color: #87baab;
+    /* color: #87baab; */
     cursor: pointer;
 }
 
@@ -197,7 +206,8 @@ header {
 /* Projects
 -----------------------------------*/
 .projects {
-    background-color: #ffe9f3;
+    /* background-color: #DABFBF; */
+    border-bottom: dotted;
 }
 .projects a {
     color: #ffd447;
@@ -241,21 +251,24 @@ header {
 /* Work Experience
 -----------------------------------*/
 .work-experience {
-    background-color: #703d57;
-    color:  #87baab
+    /* background-color: #67716A; */
+    /* color:  #87baab; */
+    border-bottom: dotted;
 }
 
 
 /* Education
 -----------------------------------*/
 .education {
-    background-color: #ffe9f3;
+    /* background-color: #B5755E; */
+    border-bottom: dotted;
 }
 
 /* Contact Info
 -----------------------------------*/
 footer {
-    background-color: #b27092;
+    /* background-color: #947e94; */
+    border-bottom: dotted;
 }
 
 @media screen and (max-width: 990px){
