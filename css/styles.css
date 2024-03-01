@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 body {
-    color: darkslategray;
+    color: darkslategrey;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,7 +25,7 @@ img {
 }
 
 a {
-    color: #ffd447;
+    color: #c9c9c9;
 }
 a:hover {
     text-decoration: none;
@@ -36,17 +36,25 @@ h2 {
 
 h1, h2 {
     font-family: 'Caveat', cursive;
+    font-size: 30px;
 }
 .content-wrap {
     width: 800px;
     margin: 0 auto;
-    padding: 60px 0;
-
+    padding: 50px 0;
 }
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .content-wrap {
+      width: 100%;
+    }
+}
+
 /* Profile
 -----------------------------------*/
 header {
     background-color: #b27092;
+    font-size: 20px;
 }
 
 /* Skills
@@ -202,7 +210,33 @@ header {
 .projects a:hover {
     background: rgba(81, 45, 56, 80%);
 }
+.btn{
+    margin-top: 50px; 
+}
 
+.card {
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.50);
+    margin: 10px;
+    margin-left: -200px;
+    padding: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    height: 325px;
+    background-color: rgb(140, 192, 132, 0.4);
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .project-container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 /* Work Experience
 -----------------------------------*/
@@ -228,6 +262,7 @@ footer {
     .content-wrap{
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
+        margin: 0 auto;
         background-color: palevioletred;
         color:#fff;
         font-size: 20px;
@@ -238,6 +273,7 @@ footer {
     .content-wrap{
         grid-template-columns: 1fr;
         padding: 2rem 50px;
+        margin: 0 auto;
         background-color: #703d57;   
         color: azure;
         font-size: 15px;
