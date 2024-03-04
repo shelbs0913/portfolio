@@ -23,7 +23,6 @@
     box-sizing: border-box;
 }
 body {
-    color: #c9c9c9;
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(to right top, #947e94, #807e96, #6e7e90, #657c85, #637878, #637971, #6a7868, #747660, #88765b, #9e7260, #af6f73, #b27092);}
 
@@ -62,6 +61,7 @@ h1, h2 {
 header {
     /* background-color: #947e94; */
     font-size: 20px;
+    color: #512d38;
     border-bottom: dotted;
 }
 
@@ -73,13 +73,13 @@ header {
 
 .skills {
     /* background-color: #412728; */
-    /* color:  #87baab */
+    color:  #87baab;
     border-bottom: dotted;
 }
 
 .header{
     text-align: center;
-    /* color: #87baab; */
+    color: #87baab;
     padding: 1rem;
     position: relative;
 }
@@ -108,7 +108,7 @@ header {
 
 .skill-box{
     padding: 1rem;
-    /* color: #87baab; */
+    color: #87baab;
     cursor: pointer;
 }
 
@@ -206,7 +206,7 @@ header {
 /* Projects
 -----------------------------------*/
 .projects {
-    /* background-color: #DABFBF; */
+    color: #DABFBF;
     border-bottom: dotted;
 }
 .projects a {
@@ -251,8 +251,7 @@ header {
 /* Work Experience
 -----------------------------------*/
 .work-experience {
-    /* background-color: #67716A; */
-    /* color:  #87baab; */
+    color:  #DABFBF;
     border-bottom: dotted;
 }
 
@@ -260,14 +259,14 @@ header {
 /* Education
 -----------------------------------*/
 .education {
-    /* background-color: #B5755E; */
+    color: #87baab;
     border-bottom: dotted;
 }
 
 /* Contact Info
 -----------------------------------*/
 footer {
-    /* background-color: #947e94; */
+    color: #512d38;
     border-bottom: dotted;
 }
 
