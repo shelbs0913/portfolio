@@ -210,7 +210,7 @@ header {
     border-bottom: dotted;
 }
 .projects a {
-    color: #ffd447;
+    color: #DABFBF;
     background: #512d38;
     text-decoration: none;
     padding: 4px;
@@ -286,8 +286,8 @@ footer {
         grid-template-columns: 1fr;
         padding: 2rem 50px;
         margin: 0 auto;
-        background-color: #703d57;   
-        color: azure;
+        background-color: lavender;   
+        color: #123112;
         font-size: 15px;
     }
 }
